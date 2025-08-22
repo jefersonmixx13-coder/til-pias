@@ -67,21 +67,21 @@ const Benefits = () => {
           <div className="w-24 h-1 bg-blue-600 mx-auto mt-6"></div>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 sm:gap-8">
           {benefits.map((benefit, index) => {
             const Icon = benefit.icon;
             return (
               <div
                 key={index}
-                className="bg-gray-50 rounded-xl p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
+                className="bg-gray-50 rounded-xl p-4 sm:p-6 hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2"
               >
                 <div className={`${benefit.color} w-12 h-12 rounded-lg flex items-center justify-center mb-4`}>
                   <Icon className="w-6 h-6 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-900 mb-3">
+                <h3 className="text-lg sm:text-xl font-bold text-gray-900 mb-3">
                   {benefit.title}
                 </h3>
-                <p className="text-gray-600 leading-relaxed">
+                <p className="text-sm sm:text-base text-gray-600 leading-relaxed">
                   {benefit.description}
                 </p>
               </div>
@@ -89,15 +89,15 @@ const Benefits = () => {
           })}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-white text-center">
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
             Imagine ter uma renda extra consistente...
           </h3>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-lg sm:text-xl mb-8 opacity-90">
             Trabalhando poucas horas por dia, no conforto da sua casa, 
             com um negócio sustentável e que não depende de patrão
           </p>
-          <div className="flex flex-wrap justify-center gap-8 text-lg">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-8 text-sm sm:text-base md:text-lg">
             <div className="flex items-center gap-2">
               <CheckCircle className="w-6 h-6" />
               <span>Sem precisar sair de casa</span>

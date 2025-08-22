@@ -41,11 +41,11 @@ const Hero = () => {
 
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="order-2 md:order-1">
-            <div className="bg-white p-8 rounded-2xl shadow-xl">
+            <div className="bg-white p-4 sm:p-6 md:p-8 rounded-2xl shadow-xl">
               <img
                 src="https://i.imgur.com/yuSCBEN.png"
                 alt="Método de Criação de Tilápias em Tanques - Ebook"
-                className="w-full h-auto rounded-lg shadow-lg"
+                className="w-full h-auto max-w-sm mx-auto rounded-lg shadow-lg"
               />
             </div>
           </div>
@@ -75,12 +75,12 @@ const Hero = () => {
 
             <button
               onClick={handleCTA}
-              className="w-full bg-green-600 hover:bg-green-700 text-white py-6 px-8 rounded-xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
+              className="w-full bg-green-600 hover:bg-green-700 text-white py-4 sm:py-6 px-6 sm:px-8 rounded-xl text-lg sm:text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
               🚀 Quero Começar Agora - R$ 19
             </button>
 
-            <div className="flex items-center justify-center gap-4 text-sm text-gray-600">
+            <div className="flex flex-wrap items-center justify-center gap-2 sm:gap-4 text-xs sm:text-sm text-gray-600">
               <span>✅ Garantia de 7 dias</span>
               <span>✅ Acesso imediato</span>
               <span>✅ Suporte incluso</span>

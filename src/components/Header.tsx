@@ -25,7 +25,7 @@ const Header = () => {
           <div className="hidden md:block">
             <button
               onClick={handleBuyNow}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              className="bg-orange-500 hover:bg-orange-600 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-lg font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
               Comprar Agora - R$ 19
             </button>
@@ -42,11 +42,11 @@ const Header = () => {
         </div>
 
         {isMenuOpen && (
-          <div className="md:hidden bg-white border-t">
-            <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="md:hidden bg-white border-t shadow-lg">
+            <div className="px-4 pt-4 pb-4 space-y-3">
               <button
                 onClick={handleBuyNow}
-                className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
+                className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors shadow-md"
               >
                 Comprar Agora - R$ 19
               </button>
