@@ -53,7 +53,7 @@ const Hero = () => {
           <div className="order-1 md:order-2 space-y-6">
             <div className="bg-yellow-100 border-l-4 border-yellow-500 p-4 rounded-r-lg">
               <p className="text-yellow-800 font-semibold">
-                🔥 OFERTA ESPECIAL: De R$ 97 por apenas R$ 37 (desconto de 62%) - Aprenda o método
+                🔥 OFERTA ESPECIAL: De R$ 47 por apenas R$ 19 (desconto de 60%) - Aprenda o método
               </p>
             </div>
 
@@ -77,7 +77,7 @@ const Hero = () => {
               onClick={handleCTA}
               className="w-full bg-green-600 hover:bg-green-700 text-white py-6 px-8 rounded-xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-xl"
             >
-              🚀 Quero Começar Agora - R$ 37
+              🚀 Quero Começar Agora - R$ 19
             </button>
 
             <div className="flex items-center justify-center gap-4 text-sm text-gray-600">

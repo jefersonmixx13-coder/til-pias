@@ -4,7 +4,7 @@ import { CheckCircle, Clock, Shield, Gift, Star } from 'lucide-react';
 const Offer = () => {
   const handlePurchase = () => {
     if (typeof window !== 'undefined' && window.fbq) {
-      window.fbq('track', 'Purchase', { value: 37, currency: 'BRL' });
+      window.fbq('track', 'Purchase', { value: 19, currency: 'BRL' });
     }
     window.open('https://pay.cakto.com.br/dbgf6ha_533635', '_blank');
   };
@@ -14,10 +14,10 @@ const Offer = () => {
       <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-            <span className="text-red-600">OFERTA ESPECIAL</span> por Tempo Limitado!
+            <span className="text-red-600">OFERTA IMPERDÍVEL</span> por Tempo Limitado!
           </h2>
           <p className="text-xl text-gray-600">
-            Adquira hoje o método completo com desconto de 62% + Bônus Exclusivos
+            Adquira hoje o método completo com desconto de 60% + Bônus Exclusivos
           </p>
         </div>
 
@@ -65,7 +65,7 @@ const Offer = () => {
                   <span className="font-bold text-yellow-800">BÔNUS EXCLUSIVO:</span>
                 </div>
                 <p className="text-yellow-800">
-                  Checklist completo para montagem do tanque ideal (Valor: R$ 27)
+                  Checklist completo para montagem do tanque ideal (Valor: R$ 17)
                 </p>
               </div>
             </div>
@@ -80,12 +80,12 @@ const Offer = () => {
             </div>
             
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="text-2xl text-gray-400 line-through">De R$ 97</div>
-              <div className="text-6xl font-bold text-green-400">R$ 37</div>
+              <div className="text-2xl text-gray-400 line-through">De R$ 47</div>
+              <div className="text-6xl font-bold text-green-400">R$ 19</div>
             </div>
             
             <p className="text-xl mb-6">
-              Economia de <span className="text-green-400 font-bold">R$ 60 (62% de desconto)</span>
+              Economia de <span className="text-green-400 font-bold">R$ 28 (60% de desconto)</span>
             </p>
           </div>
 
@@ -93,7 +93,7 @@ const Offer = () => {
             onClick={handlePurchase}
             className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 px-8 rounded-xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl mb-6"
           >
-            🚀 QUERO GARANTIR MINHA CÓPIA - R$ 37
+            🚀 QUERO GARANTIR MINHA CÓPIA - R$ 19
           </button>
 
           <div className="grid md:grid-cols-3 gap-4 text-sm opacity-90">

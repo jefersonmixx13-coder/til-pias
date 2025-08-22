@@ -19,7 +19,7 @@ const FAQ = () => {
     },
     {
       question: "Qual o investimento inicial necessário?",
-      answer: "Você pode começar com R$ 800 a R$ 1.500. Isso inclui tanque, aerador, alimentação inicial e alevinos. O método ensina como maximizar seus resultados e ter um bom retorno do investimento."
+      answer: "Você pode começar com R$ 800 a R$ 1.500. Isso inclui tanque, aerador, alimentação inicial e alevinos. O método ensina como maximizar seus resultados e ter um bom potencial de lucro."
     },
     {
       question: "E se eu não conseguir vender os peixes?",
@@ -105,7 +105,7 @@ const FAQ = () => {
             }}
             className="bg-white text-blue-600 px-12 py-4 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors transform hover:scale-105 shadow-xl"
           >
-            Garantir Minha Cópia Agora - R$ 37
+            Garantir Minha Cópia Agora - R$ 19
           </button>
         </div>
       </div>

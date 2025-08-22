@@ -27,7 +27,7 @@ const Header = () => {
               onClick={handleBuyNow}
               className="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-lg font-semibold text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              Comprar Agora - R$ 37
+              Comprar Agora - R$ 19
             </button>
           </div>
 
@@ -48,7 +48,7 @@ const Header = () => {
                 onClick={handleBuyNow}
                 className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-lg font-semibold transition-colors"
               >
-                Comprar Agora - R$ 37
+                Comprar Agora - R$ 19
               </button>
             </div>
           </div>
