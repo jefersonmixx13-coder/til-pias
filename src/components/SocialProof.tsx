@@ -64,6 +64,15 @@ const SocialProof = () => {
   return (
     <section className="py-20 bg-gray-50">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Imagem acima do título */}
+        <div className="text-center mb-12">
+          <img
+            src="https://i.imgur.com/v7ERN68.png"
+            alt="Resultados comprovados"
+            className="mx-auto max-w-full h-auto rounded-lg shadow-lg"
+          />
+        </div>
+
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
             Mais de <span className="text-green-600">500 Pessoas</span> Já Mudaram de Vida
@@ -72,6 +81,26 @@ const SocialProof = () => {
             Veja os depoimentos reais de quem seguiu nosso método e hoje tem uma renda extra consistente
           </p>
           
+          {/* Slider animado com as duas imagens */}
+          <div className="relative w-full max-w-4xl mx-auto mb-8 overflow-hidden rounded-lg shadow-lg">
+            <div className="flex animate-[slide_8s_ease-in-out_infinite]">
+              <div className="w-full flex-shrink-0">
+                <img
+                  src="https://i.imgur.com/NUFBMZz.jpeg"
+                  alt="Depoimento 1"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+              <div className="w-full flex-shrink-0">
+                <img
+                  src="https://i.imgur.com/XLrBgnN.jpeg"
+                  alt="Depoimento 2"
+                  className="w-full h-auto object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
           <div className="flex justify-center items-center gap-8 mb-8">
             <div className="text-center">
               <div className="text-4xl font-bold text-blue-600">500+</div>

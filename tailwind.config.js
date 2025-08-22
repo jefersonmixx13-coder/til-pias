@@ -26,6 +26,13 @@ export default {
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'slide': 'slide 8s ease-in-out infinite',
+      },
+      keyframes: {
+        slide: {
+          '0%, 45%': { transform: 'translateX(0%)' },
+          '55%, 100%': { transform: 'translateX(-100%)' },
+        },
       }
     },
   },
