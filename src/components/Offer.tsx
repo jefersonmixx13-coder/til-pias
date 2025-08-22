@@ -22,12 +22,12 @@ const Offer = () => {
         </div>
 
         <div className="bg-gradient-to-br from-blue-50 to-green-50 border-2 border-blue-200 rounded-2xl p-8 md:p-12 mb-12">
-          <div className="grid md:grid-cols-2 gap-12 items-center">
+          <div className="grid md:grid-cols-2 gap-8 md:gap-12 items-center">
             <div>
               <img
                 src="https://i.imgur.com/yuSCBEN.png"
                 alt="Método de Criação de Tilápias - Ebook Completo"
-                className="w-full max-w-sm mx-auto rounded-lg shadow-lg"
+                className="w-full max-w-xs sm:max-w-sm mx-auto rounded-lg shadow-lg"
               />
             </div>
 
@@ -72,7 +72,7 @@ const Offer = () => {
           </div>
         </div>
 
-        <div className="bg-gray-900 rounded-2xl p-8 md:p-12 text-white text-center mb-12">
+        <div className="bg-gray-900 rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center mb-12">
           <div className="mb-8">
             <div className="inline-flex items-center gap-2 bg-red-600 px-4 py-2 rounded-full text-sm font-bold mb-4">
               <Clock className="w-4 h-4" />
@@ -80,23 +80,23 @@ const Offer = () => {
             </div>
             
             <div className="flex items-center justify-center gap-4 mb-6">
-              <div className="text-2xl text-gray-400 line-through">De R$ 47</div>
-              <div className="text-6xl font-bold text-green-400">R$ 19</div>
+              <div className="text-lg sm:text-2xl text-gray-400 line-through">De R$ 47</div>
+              <div className="text-4xl sm:text-5xl md:text-6xl font-bold text-green-400">R$ 19</div>
             </div>
             
-            <p className="text-xl mb-6">
+            <p className="text-lg sm:text-xl mb-6">
               Economia de <span className="text-green-400 font-bold">R$ 28 (60% de desconto)</span>
             </p>
           </div>
 
           <button
             onClick={handlePurchase}
-            className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-6 px-8 rounded-xl text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl mb-6"
+            className="w-full bg-gradient-to-r from-green-500 to-green-600 hover:from-green-600 hover:to-green-700 text-white py-4 sm:py-6 px-6 sm:px-8 rounded-xl text-lg sm:text-xl md:text-2xl font-bold transition-all duration-300 transform hover:scale-105 shadow-2xl mb-6"
           >
             🚀 QUERO GARANTIR MINHA CÓPIA - R$ 19
           </button>
 
-          <div className="grid md:grid-cols-3 gap-4 text-sm opacity-90">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-3 sm:gap-4 text-xs sm:text-sm opacity-90">
             <div className="flex items-center justify-center gap-2">
               <Shield className="w-4 h-4" />
               <span>Garantia de 7 dias</span>

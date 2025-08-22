@@ -82,37 +82,37 @@ const SocialProof = () => {
           </p>
           
           {/* Slider animado com as duas imagens */}
-          <div className="relative w-full max-w-4xl mx-auto mb-8 overflow-hidden rounded-lg shadow-lg">
+          <div className="relative w-full max-w-3xl mx-auto mb-8 overflow-hidden rounded-lg shadow-lg">
             <div className="flex animate-[slide_8s_ease-in-out_infinite]">
               <div className="w-full flex-shrink-0">
                 <img
                   src="https://i.imgur.com/NUFBMZz.jpeg"
                   alt="Depoimento 1"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-48 sm:h-64 md:h-auto object-cover"
                 />
               </div>
               <div className="w-full flex-shrink-0">
                 <img
                   src="https://i.imgur.com/XLrBgnN.jpeg"
                   alt="Depoimento 2"
-                  className="w-full h-auto object-cover"
+                  className="w-full h-48 sm:h-64 md:h-auto object-cover"
                 />
               </div>
             </div>
           </div>
 
-          <div className="flex justify-center items-center gap-8 mb-8">
+          <div className="flex flex-wrap justify-center items-center gap-4 sm:gap-8 mb-8">
             <div className="text-center">
-              <div className="text-4xl font-bold text-blue-600">500+</div>
-              <div className="text-gray-600">Alunos Satisfeitos</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-blue-600">500+</div>
+              <div className="text-sm sm:text-base text-gray-600">Alunos Satisfeitos</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-green-600">87%</div>
-              <div className="text-gray-600">Taxa de Sucesso</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-green-600">87%</div>
+              <div className="text-sm sm:text-base text-gray-600">Taxa de Sucesso</div>
             </div>
             <div className="text-center">
-              <div className="text-4xl font-bold text-orange-600">Alta</div>
-              <div className="text-gray-600">Satisfação</div>
+              <div className="text-2xl sm:text-3xl md:text-4xl font-bold text-orange-600">Alta</div>
+              <div className="text-sm sm:text-base text-gray-600">Satisfação</div>
             </div>
           </div>
           
