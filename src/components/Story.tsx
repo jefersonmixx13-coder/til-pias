@@ -25,7 +25,7 @@ const Story = () => {
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12">
           <div className="mb-8">
             <img
-              src="https://images.pexels.com/photos/13796954/pexels-photo-13796954.jpeg"
+              src="https://i.imgur.com/i3h8dc4.jpeg"
               alt="Tanques de criação de tilápias - exemplo de sucesso"
               className="w-full h-64 object-cover rounded-lg shadow-lg"
             />
