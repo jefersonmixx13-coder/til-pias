@@ -26,6 +26,26 @@ export default {
       },
       animation: {
         'pulse-slow': 'pulse 3s cubic-bezier(0.4, 0, 0.6, 1) infinite',
+        'slide': 'slide 8s ease-in-out infinite',
+        'testimonialSlide': 'testimonialSlide 15s ease-in-out infinite',
+      },
+      keyframes: {
+        slide: {
+          '0%, 45%': { transform: 'translateX(0%)' },
+          '55%, 100%': { transform: 'translateX(-100%)' },
+        },
+        testimonialSlide: {
+          '0%, 18%': { transform: 'translateX(0%)' },
+          '20%, 38%': { transform: 'translateX(-100%)' },
+          '40%, 58%': { transform: 'translateX(-200%)' },
+          '60%, 78%': { transform: 'translateX(-300%)' },
+          '80%, 98%': { transform: 'translateX(-400%)' },
+          '100%': { transform: 'translateX(0%)' },
+        },
+        indicatorPulse: {
+          '0%, 18%': { opacity: '1', backgroundColor: '#22c55e' },
+          '20%, 100%': { opacity: '0.5', backgroundColor: '#ffffff' },
+        },
       }
     },
   },

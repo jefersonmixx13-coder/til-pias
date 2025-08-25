@@ -60,13 +60,13 @@ const FAQ = () => {
           {faqs.map((faq, index) => (
             <div
               key={index}
-              className="bg-white rounded-lg shadow-md overflow-hidden"
+              className="bg-white rounded-lg shadow-md overflow-hidden border border-gray-100"
             >
               <button
-                className="w-full px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
+                className="w-full px-4 sm:px-6 py-4 text-left flex items-center justify-between hover:bg-gray-50 transition-colors"
                 onClick={() => toggleFAQ(index)}
               >
-                <h3 className="text-lg font-semibold text-gray-900 pr-4">
+                <h3 className="text-base sm:text-lg font-semibold text-gray-900 pr-4">
                   {faq.question}
                 </h3>
                 {openIndex === index ? (
@@ -77,8 +77,8 @@ const FAQ = () => {
               </button>
               
               {openIndex === index && (
-                <div className="px-6 pb-4">
-                  <p className="text-gray-700 leading-relaxed">
+                <div className="px-4 sm:px-6 pb-4">
+                  <p className="text-sm sm:text-base text-gray-700 leading-relaxed">
                     {faq.answer}
                   </p>
                 </div>
@@ -87,11 +87,11 @@ const FAQ = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-8 md:p-12 text-white text-center">
+        <div className="mt-16 bg-gradient-to-r from-blue-600 to-green-600 rounded-2xl p-6 sm:p-8 md:p-12 text-white text-center">
           <h3 className="text-3xl md:text-4xl font-bold mb-6">
             Ainda tem dúvidas?
           </h3>
-          <p className="text-xl mb-8 opacity-90">
+          <p className="text-lg sm:text-xl mb-8 opacity-90">
             Lembre-se: você tem 7 dias de garantia total. Se não ficar satisfeito, 
             devolvemos 100% do seu dinheiro. Não há risco algum!
           </p>
@@ -103,7 +103,7 @@ const FAQ = () => {
               }
               window.open('https://pay.cakto.com.br/dbgf6ha_533635', '_blank');
             }}
-            className="bg-white text-blue-600 px-12 py-4 rounded-xl text-xl font-bold hover:bg-gray-100 transition-colors transform hover:scale-105 shadow-xl"
+            className="bg-white text-blue-600 px-8 sm:px-12 py-3 sm:py-4 rounded-xl text-lg sm:text-xl font-bold hover:bg-gray-100 transition-colors transform hover:scale-105 shadow-xl"
           >
             Garantir Minha Cópia Agora - R$ 19
           </button>

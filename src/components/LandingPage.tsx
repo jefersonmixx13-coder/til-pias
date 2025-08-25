@@ -4,6 +4,7 @@ import Hero from './Hero';
 import Story from './Story';
 import Benefits from './Benefits';
 import SocialProof from './SocialProof';
+import WhatsAppTestimonials from './WhatsAppTestimonials';
 import Offer from './Offer';
 import FAQ from './FAQ';
 import Footer from './Footer';
@@ -42,6 +43,7 @@ const LandingPage = () => {
       <Story />
       <Benefits />
       <SocialProof />
+      <WhatsAppTestimonials />
       <Offer />
       <FAQ />
       <Footer />
