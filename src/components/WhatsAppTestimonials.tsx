@@ -66,25 +66,41 @@ const WhatsAppTestimonials = () => {
           <div className="w-24 h-1 bg-green-600 mx-auto"></div>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mb-16">
-          {testimonialImages.map((testimonial, index) => (
-            <div
-              key={index}
-              className="bg-white rounded-2xl p-4 shadow-xl hover:shadow-2xl transition-all duration-300 transform hover:-translate-y-2"
-            >
-              <div className="relative overflow-hidden rounded-xl">
-                <img
-                  src={testimonial.src}
-                  alt={testimonial.alt}
-                  className="w-full h-auto object-contain bg-gray-50"
-                  loading="lazy"
-                />
-                <div className="absolute top-3 right-3 bg-green-500 text-white px-2 py-1 rounded-full text-xs font-bold">
-                  ✓ Verificado
+        {/* Slider de Depoimentos */}
+        <div className="mb-16">
+          <div className="relative w-full max-w-2xl mx-auto overflow-hidden rounded-2xl shadow-2xl bg-white">
+            <div className="flex animate-[testimonialSlide_15s_ease-in-out_infinite]">
+              {testimonialImages.map((testimonial, index) => (
+                <div
+                  key={index}
+                  className="w-full flex-shrink-0 relative"
+                >
+                  <img
+                    src={testimonial.src}
+                    alt={testimonial.alt}
+                    className="w-full h-auto object-contain bg-gray-50"
+                    loading="lazy"
+                  />
+                  <div className="absolute top-4 right-4 bg-green-500 text-white px-3 py-1 rounded-full text-sm font-bold shadow-lg">
+                    ✓ Verificado
+                  </div>
                 </div>
-              </div>
+              ))}
             </div>
-          ))}
+            
+            {/* Indicadores */}
+            <div className="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex gap-2">
+              {testimonialImages.map((_, index) => (
+                <div
+                  key={index}
+                  className="w-2 h-2 rounded-full bg-white opacity-50"
+                  style={{
+                    animation: `indicatorPulse 15s ease-in-out infinite ${index * 3}s`
+                  }}
+                />
+              ))}
+            </div>
+          </div>
         </div>
 
         <div className="bg-white rounded-2xl shadow-xl p-8 md:p-12 text-center">
