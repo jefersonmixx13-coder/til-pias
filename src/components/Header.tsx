@@ -12,6 +12,13 @@ const Header = () => {
     window.open('https://pay.cakto.com.br/dbgf6ha_533635', '_blank');
   };
 
+  const scrollToTestimonials = () => {
+    const element = document.getElementById('whatsapp-testimonials');
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth' });
+    }
+  };
+
   return (
     <header className="fixed top-0 left-0 right-0 z-50 bg-white shadow-lg">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -24,10 +31,10 @@ const Header = () => {
           
           <div className="hidden md:block">
             <button
-              onClick={handleBuyNow}
-              className="bg-orange-500 hover:bg-orange-600 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-lg font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
+              onClick={scrollToTestimonials}
+              className="bg-green-500 hover:bg-green-600 text-white px-6 lg:px-8 py-2 lg:py-3 rounded-lg font-semibold text-base lg:text-lg transition-all duration-300 transform hover:scale-105 shadow-lg"
             >
-              Comprar Agora - R$ 19
+              Depoimentos
             </button>
           </div>
 
@@ -45,10 +52,10 @@ const Header = () => {
           <div className="md:hidden bg-white border-t shadow-lg">
             <div className="px-4 pt-4 pb-4 space-y-3">
               <button
-                onClick={handleBuyNow}
-                className="block w-full text-center bg-orange-500 hover:bg-orange-600 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors shadow-md"
+                onClick={scrollToTestimonials}
+                className="block w-full text-center bg-green-500 hover:bg-green-600 text-white px-6 py-4 rounded-lg font-semibold text-lg transition-colors shadow-md"
               >
-                Comprar Agora - R$ 19
+                Depoimentos
               </button>
             </div>
           </div>
